@@ -4,7 +4,9 @@ const _ = require("lodash");
 require('dotenv').config(); // Load environment variables
 
 const MONGO_URL = process.env.MONGO_URL;
-mongoose.connect(MONGO_URL);
+mongoose.connect(MONGO_URL)
+  .then(() => console.log('MongoDB connected'))
+  .catch(err => console.error('MongoDB connection error:', err));
 
 const itemsSchema = {
   name: String
