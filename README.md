@@ -24,7 +24,7 @@ It allows users to create, read, update, and delete tasks.
 </ul>
 
 <h2>🚀 Deployment</h2>
-<p>The project is deployed on Render, making it easily accessible and shareable. You can visit the live site here. ↙️</p>
+<p>The project is deployed on Render, making it easily accessible and shareable. You can visit the live site here. ⬇️</p>
 🔗<span> </span><a href="https://todowebapp-h6p2.onrender.com/">todowebapp-h6p2.onrender.com</a>
 
 <h2>🤝 Contributing</h2>
