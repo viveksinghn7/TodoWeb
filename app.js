@@ -35,8 +35,6 @@ const listSchema = {
 
 const List = mongoose.model("List", listSchema);
 
-
-
 const app = express();
 app.set('view engine', 'ejs');
 app.use(express.urlencoded({extended: true}));
