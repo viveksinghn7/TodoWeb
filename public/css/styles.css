@@ -15,7 +15,7 @@ h1 {
 }
 
 .box {
-  max-width: 27%;
+  max-width: 425px;
   margin: 60px auto;
   background: white;
   border-radius: 5px;
