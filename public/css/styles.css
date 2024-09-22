@@ -71,6 +71,10 @@ button {
   border-width: 0;
 }
 
+button:hover {
+  background-color: #384B70;
+}
+
 input[type="text"] {
   text-align: center;
   height: 60px;
@@ -99,6 +103,6 @@ footer {
   padding-top: 10px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  color: rgba(0, 0, 0, 0.5);
+  color: #282828;
   text-align: center;
 }
