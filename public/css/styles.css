@@ -100,9 +100,14 @@ input[type="text"]:focus {
 }
 
 footer {
-  padding-top: 10px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  color: #282828;
+  color: #808080;
   text-align: center;
 }
