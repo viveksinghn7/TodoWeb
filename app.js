@@ -91,7 +91,7 @@ app.post("/", async function(req, res){
     name: itemName
   });
 
-  if (listName === "Today") {
+  if (listName === "TODAY") {
     item.save();
     res.redirect("/");
   } else {
@@ -106,7 +106,7 @@ app.post("/delete", async function(req, res){
   const checkedItemId = req.body.checkbox;
   const listName = req.body.listName;
 
-  if (listName === "Today") {
+  if (listName === "TODAY") {
     try {
       const deleteItem = await Item.deleteOne({_id: checkedItemId})
       res.redirect("/");
