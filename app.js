@@ -1,6 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const _ = require("lodash");
+const axios = require("axios"); // Add axios for making HTTP requests
 require('dotenv').config(); // Load environment variables
 
 const MONGO_URL = process.env.MONGO_URL;
@@ -40,6 +41,21 @@ app.set('view engine', 'ejs');
 app.use(express.urlencoded({extended: true}));
 app.use(express.static("public"));
 
+// Interval to keep Render instance active
+const url = 'https://todowebapp-h6p2.onrender.com'; // Replace with your Render URL
+const interval = 30000; // Interval in milliseconds (30 seconds)
+
+function reloadWebsite() {
+  axios.get(url)
+    .then(response => {
+      console.log(`Reloaded at ${new Date().toISOString()}: Status Code ${response.status}`);
+    })
+    .catch(error => {
+      console.error(`Error reloading at ${new Date().toISOString()}:`, error.message);
+    });
+}
+
+setInterval(reloadWebsite, interval);
 
 app.get("/", async function(req, res){
 
