@@ -55,7 +55,7 @@ app.get("/", async function(req, res){
         });
       res.redirect("/");
     } else {
-      res.render("list", {listTitle: "Today", newItems: foundItems});
+      res.render("list", {listTitle: "TODAY", newItems: foundItems});
     }
   } catch (err) {
     console.error("Error fetching items:", err);
