@@ -165,8 +165,6 @@ footer p {
   }
 
   button {
-    min-height: 50px;
-    width: 50px;
     margin-right: 20px;
     font-size: 30px;
   }
@@ -178,7 +176,7 @@ footer p {
   }
 
   footer {
-    padding: 8px 0;
-    font-size: 13px;
+    padding: 9px 0;
+    font-size: 13.5px;
   }
 }
