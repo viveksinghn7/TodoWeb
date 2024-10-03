@@ -43,7 +43,7 @@ app.use(express.static("public"));
 
 // Interval to keep Render instance active
 const url = 'https://todowebapp-h6p2.onrender.com'; // Replace with your Render URL
-const interval = 30000; // Interval in milliseconds (30 seconds)
+const interval = 600000; // Interval in milliseconds (30 seconds)
 
 function reloadWebsite() {
   axios.get(url)
@@ -98,7 +98,6 @@ app.get("/:customListName", async function(req, res) {
     }
 });
 
-
 app.post("/", async function(req, res){
   const itemName = req.body.newItem;
   const listName = req.body.list;
@@ -141,7 +140,6 @@ app.post("/delete", async function(req, res){
       res.status(500).send("Internal Server Error");
     }
 });
-
 
 app.get("/about", function(req, res){
   res.render("about");
